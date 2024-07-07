@@ -1,0 +1,104 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./../img/bg_img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.header::after  {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #252B49, $alpha: 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrapper-header {
+    margin: 0 -15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    padding-top: 45px;
+}
+.wrapper {
+    @include wrapper;
+    position: relative;
+    margin-bottom: 41px;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        display: block;
+        background-color: #BABBC5;
+        position: absolute;
+        top: 100%;
+        margin: 33px 0 0;
+    }
+}
+.header-logo {
+    vertical-align: 100px;
+    font-size: $_h2;
+    text-align: left;
+    text-transform: uppercase;
+    .logo-1 {
+        font-weight: 900;
+        color: #656980;
+    }
+    .logo-2 {
+        font-weight: 200;
+        color: #fff;
+    }
+}
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .navigation-list-item a {
+        font-size: $_h6;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        margin-left: 50px;
+        position: relative;
+        &:hover {
+            &::after {
+                content: "";
+                width: 100%;
+                height: 3px;
+                display: block;
+                background-color: #BABBC5;
+                position: absolute;
+                margin: 40px 0px 0px 50px;
+            }
+        }
+        &:active {
+            color: #E71414;
+            &::after {
+                content: "";
+                width: 100%;
+                height: 3px;
+                display: block;
+                background-color: #E71414;
+                position: absolute;
+                margin: 40px 0px 0px 50px;
+            }
+        }
+
+    }
+}
+.firstscreen {
+    padding: 140px 0px 120px;
+}
+.main-title {
+    font-size: $_h1;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-stroke: #000 1px;
+}

@@ -1,0 +1,16 @@
+@mixin wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+@mixin btn {
+    width: 370px;
+    height: 80px;
+    font-size: $_h4;
+    font-weight: 900;
+    background-color: #FF4343;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}

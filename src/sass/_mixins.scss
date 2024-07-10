@@ -13,4 +13,18 @@
     color: #fff;
     cursor: pointer;
     transition: 0.2s;
+    border-style:none;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    &:hover {
+      background-color: #E71414;
+    }
+    &:active {
+      background-color: #FF4343;
+      box-shadow: 4px 4px 30px #FF4343;
+    }
+    @media (max-width: 1024px) {
+      width: 355px;
+    }
 }

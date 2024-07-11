@@ -1,0 +1,120 @@
+.work {
+    padding: 114px 0;
+    @media (max-width: 1024px) {
+        padding: 78px 0;
+    }
+    @media (max-width: 320px) {
+        padding: 34px 0;
+    }    
+}
+.team-wrapper {
+    @include wrapper;
+    @media (max-width: 320px) {
+        flex-direction: column;
+    } 
+}
+.team-card {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 1024px) {
+        width: 227px;
+    }
+    @media (max-width: 320px) {
+        width: 280px;
+        margin-bottom: 49px;
+    } 
+}
+.team-img {
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    @media (max-width: 1024px) {
+        width: 227px;
+        height: 227px;
+        margin-bottom: 25px;
+    }
+    @media (max-width: 320px) {
+        width: 280px;
+        height: 227px;
+    }
+}
+ .team-img img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+}
+.team-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    @media (max-width: 1024px) {
+        margin-bottom: 22px;
+    }
+    @media (max-width: 320px) {
+        margin-bottom: 38px;
+    }
+}
+.team-subtitle {
+    font-size: $_h4;
+    font-weight: 700;
+    color: #2D3033;
+    line-height: 30px;
+    @media (max-width: 1024px) {
+        font-size: $_h5;
+        line-height: 25px;
+    }
+}
+.team-skill {
+    font-size: $_h5;
+    font-weight: 400;
+    color: #FF4343;
+    text-transform: uppercase;
+    line-height: 21px;
+    @media (max-width: 1024px) {
+        font-size: 0.875rem;
+        line-height: 16px;
+    }
+}
+.team-description {
+    font-size: $_h5;
+    font-weight: 400;
+    color: #6C7279;
+    margin-bottom: 38px;
+    @media (max-width: 1024px) {
+        font-size: 0.875rem;
+    }
+}
+.team-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.team-icon {
+    margin-right: 6px;
+    width: 39px;
+    height: 39x;
+    overflow: hidden;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    @media (max-width: 1024px) {
+        width: 32px;
+        height: 32px;
+    }
+    @media (max-width: 320px) {
+        width: 39px;
+        height: 39px;
+    }
+}
+.team-icon:last-child {
+    margin-right: 0px;
+}
+.team-icon img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%; 
+}

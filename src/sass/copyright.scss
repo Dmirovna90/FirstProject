@@ -1,0 +1,30 @@
+.copyright {
+    background-color: #2C3154;
+}
+.copyright-description {
+    padding: 24px 0;
+    @media (max-width: 1024px) {
+        padding: 14px 0;
+    }
+    @media (max-width: 320px) {
+        padding: 29px 0;
+    }
+}
+.copyright-text {
+    color: #808080;
+    font-size: $_h5;
+    font-weight: 400;
+    text-align: center;
+    @media (max-width: 1024px) {
+        font-size: 0.875rem;
+    }
+}
+.copyright-link {
+    color: #fff;
+    &:hover {
+        color: #E71414;
+    }
+    @media (max-width: 1024px) {
+        font-size: 0.875rem;
+    }
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./sass/index.scss">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -38,6 +39,28 @@
             </div>
         </div>
     </header>
+    <header class="header-mobile">
+        <div class="container">
+            <div class="wrapper-header-mobile">
+                <div class="wrapper-mobile">
+                    <div class="header-logo">
+                        <p class="logo-1">active<span class="logo-2">box</span></p>
+                    </div>
+                    <button class="burger" id="menu__toggle"></button>
+                </div>
+                <nav class="navigation">
+                    <ul class="navigation-list-mobile">
+                        <li class="navigation-list-item"><a href="features">features</a></li>
+                        <li class="navigation-list-item"><a href="work">works</a></li>
+                        <li class="navigation-list-item"><a href="team">our team</a></li>
+                        <li class="navigation-list-item"><a href="testimonials">testimonials</a></li>
+                        <li class="navigation-list-item"><a href="download">download</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
     <section class="features">
         <div class="container">
             <div class="features-grid">
@@ -123,117 +146,228 @@
         </div>
     </section>
     <section class="work">
-        <div class="work-container">
-            <div class="work-wrapper">
-                <div class="work-card">
-                    <div class="work-img">
-                        <img alt="#" src="./img/works/work_1.jpg">
-                    </div>
+        <div class="work-wrapper">
+            <div class="work-card">
+                <a href="#">
+                    <img alt="#" src="./img/works/work_1.jpg">
                     <div class="work-description">
                         <div class="work-title">
-                            <p>Project Name</p></div>
+                            <h4>Project Name</h4>
+                        </div>
                         <div class="work-text">
-                            <p>
-                                User Interface Design
-                            </p>
+                            <p>User Interface Design</p>
                         </div>
                     </div>
-                </div>
-                <div class="work-card">
-                    <div class="work-img">
-                        <img alt="#" src="./img/works/work_2.jpg">
-                    </div>
-                    <div class="work-description">
-                        <div class="title">Project Name</div>
-                        <div class="work-text">
-                            <p>
-                                User Interface Design
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="work-img">
-                        <img alt="#" src="./img/works/work_3.jpg">
-                    </div>
-                    <div class="work-description">
-                        <div class="title">Project Name</div>
-                        <div class="work-text">
-                            <p>
-                                User Interface Design
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="work-img">
-                        <img alt="#" src="./img/works/work_4.jpg">
-                    </div>
-                    <div class="work-description">
-                        <div class="title">Project Name</div>
-                        <div class="work-text">
-                            <p>
-                                User Interface Design
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
-            <div class="work-wrapper">
-                <div class="work-card">
-                    <div class="work-img">
-                        <img alt="#" src="./img/works/work_5.jpg">
-                    </div>
+            <div class="work-card">
+                <a href="#">
+                    <img alt="#" src="./img/works/work_2.jpg">
                     <div class="work-description">
-                        <div class="title">Project Name</div>
+                        <div class="work-title">
+                            <h4>Project Name</h4>
+                        </div>
                         <div class="work-text">
-                            <p>
-                                User Interface Design
-                            </p>
+                            <p>User Interface Design</p>
                         </div>
                     </div>
-                </div>
-                <div class="work-card">
-                    <div class="work-img">
-                        <img alt="#" src="./img/works/work_6.jpg">
-                    </div>
+                </a>
+            </div>
+            <div class="work-card">
+                <a href="#">
+                    <img alt="#" src="./img/works/work_3.jpg">
                     <div class="work-description">
-                        <div class="title">Project Name</div>
+                        <div class="work-title">
+                            <h4>Project Name</h4>
+                        </div>
                         <div class="work-text">
-                            <p>
-                                User Interface Design
-                            </p>
+                            <p>User Interface Design</p>
                         </div>
                     </div>
-                </div>
-                <div class="work-card">
-                    <div class="work-img">
-                        <img alt="#" src="./img/works/work_7.jpg">
-                    </div>
+                </a>
+            </div>
+            <div class="work-card">
+                <a href="#">
+                    <img alt="#" src="./img/works/work_4.jpg">
                     <div class="work-description">
-                        <div class="title">Project Name</div>
+                        <div class="work-title">
+                            <h4>Project Name</h4>
+                        </div>
                         <div class="work-text">
-                            <p>
-                                User Interface Design
-                            </p>
+                            <p>User Interface Design</p>
                         </div>
                     </div>
-                </div>
-                <div class="work-card">
-                    <div class="work-img">
-                        <img alt="#" src="./img/works/work_8.jpg">
-                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="work-wrapper">
+            <div class="work-card">
+                <a href="#">
+                    <img alt="#" src="./img/works/work_5.jpg">
                     <div class="work-description">
-                        <div class="title">Project Name</div>
+                        <div class="work-title">
+                            <h4>Project Name</h4>
+                        </div>
                         <div class="work-text">
-                            <p>
-                                User Interface Design
-                            </p>
+                            <p>User Interface Design</p>
                         </div>
                     </div>
-                </div>
-             </div>
-         </div>
+                </a>
+            </div>
+            <div class="work-card">
+                <a href="#">
+                    <img alt="#" src="./img/works/work_6.jpg">
+                    <div class="work-description">
+                        <div class="work-title">
+                            <h4>Project Name</h4>
+                        </div>
+                        <div class="work-text">
+                            <p>User Interface Design</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="work-card">
+                <a href="#">
+                    <img alt="#" src="./img/works/work_7.jpg">
+                    <div class="work-description">
+                        <div class="work-title">
+                            <h4>Project Name</h4>
+                        </div>
+                        <div class="work-text">
+                            <p>User Interface Design</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="work-card">
+                <a href="#">
+                    <img alt="#" src="./img/works/work_8.jpg">
+                    <div class="work-description">
+                        <div class="work-title">
+                            <h4>Project Name</h4>
+                        </div>
+                        <div class="work-text">
+                            <p>User Interface Design</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="work-mobile">
+        <div class="work-wrapper">
+            <div class="work-card">
+                <a href="#">
+                    <img alt="#" src="./img/works/work_1.jpg">
+                    <div class="work-description">
+                        <div class="work-title">
+                            <h4>Project Name</h4>
+                        </div>
+                        <div class="work-text">
+                            <p>User Interface Design</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="work-card">
+                <a href="#">
+                    <img alt="#" src="./img/works/work_2.jpg">
+                    <div class="work-description">
+                        <div class="work-title">
+                            <h4>Project Name</h4>
+                        </div>
+                        <div class="work-text">
+                            <p>User Interface Design</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="work-wrapper">
+            <div class="work-card">
+                <a href="#">
+                    <img alt="#" src="./img/works/work_3.jpg">
+                    <div class="work-description">
+                        <div class="work-title">
+                            <h4>Project Name</h4>
+                        </div>
+                        <div class="work-text">
+                            <p>User Interface Design</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="work-card">
+                <a href="#">
+                    <img alt="#" src="./img/works/work_4.jpg">
+                    <div class="work-description">
+                        <div class="work-title">
+                            <h4>Project Name</h4>
+                        </div>
+                        <div class="work-text">
+                            <p>User Interface Design</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="work-wrapper">
+            <div class="work-card">
+                <a href="#">
+                    <img alt="#" src="./img/works/work_5.jpg">
+                    <div class="work-description">
+                        <div class="work-title">
+                            <h4>Project Name</h4>
+                        </div>
+                        <div class="work-text">
+                            <p>User Interface Design</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="work-card">
+                <a href="#">
+                    <img alt="#" src="./img/works/work_6.jpg">
+                    <div class="work-description">
+                        <div class="work-title">
+                            <h4>Project Name</h4>
+                        </div>
+                        <div class="work-text">
+                            <p>User Interface Design</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="work-wrapper">
+            <div class="work-card">
+                <a href="#">
+                    <img alt="#" src="./img/works/work_7.jpg">
+                    <div class="work-description">
+                        <div class="work-title">
+                            <h4>Project Name</h4>
+                        </div>
+                        <div class="work-text">
+                            <p>User Interface Design</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="work-card">
+                <a href="#">
+                    <img alt="#" src="./img/works/work_8.jpg">
+                    <div class="work-description">
+                        <div class="work-title">
+                            <h4>Project Name</h4>
+                        </div>
+                        <div class="work-text">
+                            <p>User Interface Design</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </section>
     <section class="team">
         <div class="container">
@@ -357,6 +491,8 @@
             </div>
         </div>
     </section>
+    <section class="testimonials">
+    </section>
     <section class="download">
     <div class="container">
         <div class="download-wrapper">
@@ -419,8 +555,8 @@
     <div class="copyright">
         <div class="container">
             <div class="copyright-description">
-                <p>Copyright © 2015 ActiveBox. All Rights</p>
-                <p>Reserved Made with <span  class="copyright-text">By Kamal Chaneman</span></p>
+                <p class="copyright-text">Copyright © 2015 ActiveBox. All Rights</p>
+                <p class="copyright-text">Reserved Made with <a href class="copyright-link">By Kamal Chaneman</a></p>
             </div>
         </div>
     </div>
@@ -428,6 +564,7 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.js"></script>
     <script type="module" src="./js/app.js"></script>
 </body>
 </html>

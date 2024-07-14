@@ -4,6 +4,15 @@
     @media (max-width: 1024px) {
         height: 460px;
     }
+    @media (max-width: 320px) {
+        display: none;
+    }
+}
+.work-mobile {
+    display: none;
+    @media (max-width: 320px) {
+        display: block;
+    }
 }
 .work-wrapper {
     @include wrapper;
@@ -16,6 +25,10 @@
     border: 2px solid #fff;
     @media (max-width: 1024px) {
         height: 230px;
+    }
+    @media (max-width: 320px) {
+        width: 50%;
+        height: 144px;
     }
 }
 .work-card a img {
@@ -53,6 +66,9 @@
     margin-bottom: 20px;
     @media (max-width: 1024px) {
         font-size: $_h5;
+    }
+    @media (max-width: 320px) {
+        margin-bottom: 5px;
     }
 }
 .work-text {

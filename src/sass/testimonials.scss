@@ -1,0 +1,122 @@
+.testimonials {
+    margin: auto;
+    width: 100%;
+}
+.slider {
+    margin-bottom: 31px;
+}
+.slider-content {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 320px) {
+        flex-direction: column;
+    }
+}
+.slider-content__left {
+    width: 50%;
+    height: 490px;
+    overflow: hidden;
+    @media (max-width: 1024px) {
+        height: 332px;
+    }
+    @media (max-width: 320px) {
+        width: 100%;
+        height: 212px;
+    }
+}
+.slider-content__avatar img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.slider-content__right {
+    width: 50%;
+    height: 490px;
+    background-color: #5C3249;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 170px 0 129px;
+    @media (max-width: 1024px) {
+        height: 332px;
+        padding: 0 104px 0 88px;
+    }
+    @media (max-width: 320px) {
+        width: 100%;
+        height: auto;
+        padding: 26px 20px 95px 20px;
+    }
+}
+#slider-2 {
+    background-color: #2C3154;
+}
+#slider-3 {
+    background-color: #FF4343;
+}
+#slider-4 {
+    background-color: #353C65;
+}
+#slider-5 {
+    background-color: #B90C0C;
+}
+.slider-content__text p {
+    margin-bottom: 38px;
+    font-family: "Cardo";
+    font-size: $_h2;
+    color: #fff;
+    font-style: italic;
+    font-weight: 400;
+    text-align: left;
+    @media (max-width: 1024px) {
+        font-size: $_h4;
+        margin-bottom: 24px;
+    }
+    @media (max-width: 320px) {
+        text-align: center;
+        margin-bottom: 34px;
+    }
+}
+.slider-content__user {
+    font-size: $_h6;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: left;
+    @media (max-width: 1024px) {
+        font-size: 0.75rem;
+    }
+    @media (max-width: 320px) {
+        text-align: center;
+    }
+}
+   .slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -31px;
+   }
+   .slider .slick-dots li {
+    font-size: 0;
+    list-style: none;
+    margin: 0 15px;
+   }
+   .slider .slick-dots button {
+    font-size: 0;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border: 1px solid #5C3249;
+    border-radius: 50%;
+    &::before {
+        font-size: 0;
+    }
+    @media (max-width: 1024px) {
+        width: 10px;
+        height: 10px;
+    }
+   }
+   .slider .slick-dots li.slick-active button {
+    background-color: #5C3249;
+   }
+

@@ -9,6 +9,8 @@
 }
 .team-wrapper {
     @include wrapper;
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
     @media (max-width: 320px) {
         flex-direction: column;
     } 

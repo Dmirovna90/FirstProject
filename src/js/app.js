@@ -7,3 +7,9 @@ $(".slider").slick({
   autoplay: true,
   autoplaySpeed: 2500
 });
+
+let nav = document.querySelector(".navigation");
+let burger = document.querySelector(".fa-bars");
+burger.addEventListener("click", function (){
+  nav.classList.toggle("active");
+})

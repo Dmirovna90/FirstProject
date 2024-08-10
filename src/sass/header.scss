@@ -166,7 +166,7 @@
     text-align: center;
     text-transform: uppercase;
     -webkit-text-stroke: #000 1px;
-    padding-bottom: 51px;
+    margin-bottom: 51px;
     @media (max-width: 1024px) {
         font-size: 3rem;
         padding-bottom: 77px;
@@ -182,7 +182,7 @@
     color: #fff;
     text-align: center;
     -webkit-text-stroke: #000 0.5px;
-    padding-bottom: 87px;
+    margin-bottom: 87px;
     @media (max-width: 1024px) {
         font-size: $_h5;
         -webkit-text-stroke: 0px;
@@ -199,7 +199,11 @@
     position: relative;
     animation-duration: 1s;
     animation-direction: alternate;
-    animation-iteration-count: 10;
+    animation-iteration-count: 30;
+    padding: 30px 0 30px 0;
+    @media (max-width: 320px) {
+        padding: 16px 0 21px 0;
+      }
 }
 @keyframes btn {
 0% {
